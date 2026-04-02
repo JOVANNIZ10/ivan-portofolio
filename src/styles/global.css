@@ -231,7 +231,134 @@ img {
 
 /*=============== HOME ===============*/
 
+.home {
+  position: relative;
+}
 
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr auto; /* texto izquierda, foto derecha */
+  align-items: center;
+  padding-top: 4rem;
+  gap: 2rem;
+}
+
+/* ── Columna izquierda: todo apilado ── */
+.home__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home__greeting {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-regular);
+  color: var(--first-color);
+}
+
+.home__name {
+  font-size: var(--biggest-font-size);
+}
+
+.home__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__split {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-regular);
+  color: var(--first-color);
+}
+
+.home__profession-1 {
+  font-size: var(--bigger-font-size);
+  color: var(--first-color);
+}
+
+.home__profession-2 {
+  font-size: var(--bigger-font-size);
+  font-weight: var(--font-bold);
+}
+
+/* Redes sociales en fila */
+.home__social {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.home__social-link {
+  color: var(--title-color);
+  font-size: 1.5rem;
+  transition: transform 0.4s, color 0.4s;
+}
+
+.home__social-link:hover {
+  color: var(--first-color);
+  transform: translateY(-3px);
+}
+
+/* Botón CV */
+.home__cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--first-color);
+  color: var(--title-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-size: var(--small-font-size);
+  transition: background 0.3s, color 0.3s;
+  width: fit-content;
+}
+
+.home__cv:hover {
+  background: var(--first-color);
+  color: #000;
+}
+
+/* ── Foto a la derecha ── */
+.home__image {
+  width: 250px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Grid de fondo */
+.home__image::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background-image: 
+    linear-gradient(var(--first-color-alt) 1px, transparent 1px),
+    linear-gradient(90deg, var(--first-color-alt) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.15;
+  z-index: -1;
+  border-radius: 12px;
+}
+
+.home__perfil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.home__image-wrapper {
+  position: relative;
+  padding: 20px;
+  background-image: 
+    linear-gradient(var(--first-color-alt) 1px, transparent 1px),
+    linear-gradient(90deg, var(--first-color-alt) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.9;
+  border-radius: 16px;
+}
 /*=============== BUTTON ===============*/
 
 
