@@ -299,6 +299,8 @@ img {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  
+  
 }
 
 .home__social-link {
@@ -391,6 +393,16 @@ img {
     width: 220px;
     height: 280px;
   }
+  .home__data {
+    text-align: center;
+  }
+  .home__info{
+    align-items: center;
+  }
+  .home__social{
+    justify-content: center;
+  }
+  
 }
 /*=============== BUTTON ===============*/
 
