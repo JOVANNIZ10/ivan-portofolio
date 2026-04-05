@@ -315,7 +315,7 @@ img {
 }
 
 /* Botón CV */
-.home__cv {
+/*.home__cv {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -326,6 +326,22 @@ img {
   font-size: var(--small-font-size);
   transition: background 0.3s, color 0.3s;
   width: fit-content;
+}
+*/
+.home__cv{
+  background-color: var(--body-color);
+  border: 3px solid var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 32px hsla(var(--hue), 60%, 64%, 0.5), inset 8px -8px 30px var(--first-color-alt-2);
+  border-radius:4rem;
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  align-self: flex-start;
+  transition: background 0.4s, color 0.3s;
 }
 
 .home__cv:hover {
