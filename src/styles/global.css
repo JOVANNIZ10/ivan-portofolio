@@ -399,6 +399,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .home {
+    height: 110vh;
+  }
   .home__container {
     grid-template-columns: 1fr; /* una sola columna en móvil */
     justify-items: center;
