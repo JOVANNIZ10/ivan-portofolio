@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/swiper-bundle.min.css";
 import Analytics from '@vercel/analytics/astro'
 ---
 <html lang="es" class="scroll-smooth">
@@ -26,6 +27,7 @@ import Analytics from '@vercel/analytics/astro'
     <main>
       <slot name="home"/>
       <slot name="about"/>
+      <slot name="projects"/>
     </main>
 
     <footer>
@@ -33,6 +35,22 @@ import Analytics from '@vercel/analytics/astro'
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/src/js/main.js"></script>
+    <script is:inline>
+  window.addEventListener('load', function() {
+    new Swiper('.projects__swiper', {
+      loop: true,
+      spaceBetween: 24,
+      slidesPerView: 'auto',
+      grabCursor: true,
+      speed: 600,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
   </body>
 </html>

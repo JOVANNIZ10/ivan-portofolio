@@ -1,4 +1,5 @@
 /*=============== HOME SPLIT TEXT ===============*/
+
 /*const{animate, text, stagger}=anime;
 
 const{chars: chars1} = text.split('.home__profession-1', {chars:true})
@@ -27,6 +28,7 @@ animate(chars2,{
     loop: true,
 
 })*/
+
 /*=============== SWIPER PROJECTS ===============*/
 
 
