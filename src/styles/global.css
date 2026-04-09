@@ -582,7 +582,14 @@ img {
   bottom: 0;
 }
 
+.projects .swiper-pagination-bullet{
+  background-color: var(--first-color);
+  transition: opacity .4s;
+}
 
+.projects__swiper .swiper-slide {
+  width: 350px;
+}
 
 /*=============== WORK ===============*/
 
@@ -623,9 +630,14 @@ img {
     .container{
         margin-inline: 1rem;
     }
+
+    .projects__card{
+      padding-inline: 1rem;
+    }
 }
 
 /* For medium devices */
+
 
 
 /* For large devices */ 

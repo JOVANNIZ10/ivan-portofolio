@@ -40,6 +40,7 @@ const swiperProjects = new Swiper('.projects__swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   autoplay:{
